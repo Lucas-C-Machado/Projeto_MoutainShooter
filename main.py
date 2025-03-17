@@ -11,5 +11,6 @@ while True:  # A janela fica aberta infinitamente
     # Check for all events (Cheque por TODOS os eventos)
     for event in pygame.event.get():  # TODOS os EVENTOS VIRÃO
         if event.type == pygame.QUIT: #Quando o evento for do tipo quit
+            print ('Quitting...') #Informa ao usuário que um processo de SAÍDA está iniciando
             pygame.quit()  # Close Window (Fecha a janela)
             quit()  # end pygame (Fecha de fato o pygame)
