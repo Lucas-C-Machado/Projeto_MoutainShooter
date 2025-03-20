@@ -1,5 +1,6 @@
 import pygame #importando a biblioteca pygame
 
+from code.const import WIN_WIDTH, WIN_HEIGHT #arquivos constantes do menu importados
 from code.menu import Menu #importando o menu
 
 # !/usr/bin/python
@@ -8,16 +9,12 @@ from code.menu import Menu #importando o menu
 class Game:
     def __init__(self):
         pygame.init()  # INICIALIZAÇÃO do programa
-        self.window = pygame.display.set_mode(size=(600, 480))  # Seria a nossa janela de jogo em si
+        self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))  # Seria a nossa janela de jogo em si (Tamanho dela/imagem)
 
     def run(self):
         while True:  # A janela fica aberta infinitamente
             menu = Menu(self.window) #chamando a janela do menu
             menu.run() #rodando o menu
-            pass
+            pass #é um preenchimento vazio que não faz nada, é usada quando um bloco de código é obrigatório, mas ainda não quer ou não precisa definir nenhuma lógica.
 
-            # Check for all events (Cheque por TODOS os eventos)
-            # for event in pygame.event.get():  # TODOS os EVENTOS VIRÃO
-            #    if event.type == pygame.QUIT:  # Quando o evento for do tipo quit
-            #        pygame.quit()  # Close Window (Fecha a janela)
-            #        quit()  # end pygame (Fecha de fato o pygame)
+
