@@ -19,8 +19,8 @@ class Menu:
         pygame.mixer_music.play(-1) #para tocar a música, parâmetro -1 para a música tocar infinitamente
         while True: #precisa desse loop para carregar a imagem
             self.window.blit(source=self.surf, dest=self.rect)  # self.window.blit = ta vindo da nossa janela, source=self.surf = que está vindo da nossa imagem, dest=self.rect = que está destacando a imagem e fazendo ela aparecer
-            self.menu_text(50, "Mountain", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, "Shooter", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(50, "Mountain", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "Shooter", COLOR_WHITE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)): #o código está percorrendo a lista e colocando TODOS os elementos referentes ao MENU_OPTION
                 self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 25 * i)) #os textos vão sair com esta formatação e para palavra será acrescentado um espaçamento automático de 25 entre cada uma
