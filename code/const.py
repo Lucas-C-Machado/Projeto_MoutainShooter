@@ -6,6 +6,7 @@
 #C - Variáveis que só COMEÇAM com C
 COLOR_ORANGE = (255, 128, 0) #RGB do laranja
 COLOR_WHITE = (255, 255, 255)
+COLOR_YELLOW = (255, 255, 0)
 
 #M - Variáveis que só COMEÇAM com M
 MENU_OPTION = ('NEW GAME 1P',
