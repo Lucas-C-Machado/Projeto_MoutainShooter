@@ -11,7 +11,7 @@ class Menu:
     def __init__(self, window): #método construtor ativado
         self.window = window #chamando a janela do manu
         self.surf = pygame.image.load('./asset/menu/Menu.png').convert_alpha() #a imagem está sendo carregada para dentro do pygame #entre aspas simples pois é string
-        self.rect = self.surf.get_rect(left=0, top=0) #self.rect vai armazenar um retângulo com a dimensão do self.surf naquela localidade
+        self.rect = self.surf.get_rect(left=0, top=0) #self.r/ect vai armazenar um retângulo com a dimensão do self.surf naquela localidade
 
     def run(self):
         menu_option = 0 #tem que ter algum valor agregado, mesmo que seja nenhum (É a onde vai direcionar a posição das cores do menu)
