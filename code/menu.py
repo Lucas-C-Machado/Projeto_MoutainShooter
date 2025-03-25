@@ -38,14 +38,19 @@ class Menu:
                     pygame.quit()  # Close Window (Fecha a janela)
                     quit()  # end pygame (Fecha de fato o pygame)
                 if event.type == pygame.KEYDOWN: #se o comando for um evento de teclas KEYDOWN
-                   if event.key == pygame.K_DOWN: #verificar se a tecla é igual a pygame.K_DOWN
+                   if event.key == pygame.K_DOWN: #verificar se a tecla é para BAIXO
                         if menu_option < len(MENU_OPTION) -1: #Se menu_option ainda não chegou ao último item
                             menu_option +=1 #incrementa um, desce um
                         else: #Se não está no último item
                             menu_option = 0 #vai dar um reset e voltar para o começo
+                   if event.key == pygame.K_UP: #verificar se a tecla é igual para CIMA
+                        if menu_option > 0: #Se menu_option ainda não chegou ao último item
+                            menu_option -=1 #NÃO incrementa um, desce um
+                        else: #Se não está no último item
+                            menu_option = len(MENU_OPTION) - 1 #vai dar um reset e voltar para o começo
+                   if event.key == pygame.K_RETURN:  #verificar se a tecla é igual a ENTER
+                       return MENU_OPTION[menu_option] #return para encerramento da classe, vai retornar para o nome da opção no menu
 
-
-            pygame.display.flip()
 
     #MÉTODO de configurações de texto no menu
     #OBS: TODO e QUALQUER texto ele se passa por uma "imagem", é o que o código entende

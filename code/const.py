@@ -11,6 +11,7 @@ COLOR_YELLOW = (255, 255, 0)
 #M - Variáveis que só COMEÇAM com M
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
+               'NEW GAME 2P - COMPETITIVE',
                'SCORE',
                'EXIT')
 
